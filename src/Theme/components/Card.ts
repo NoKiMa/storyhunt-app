@@ -5,12 +5,15 @@ export default function ({ Colors, Gutters, Layout }: ThemeCommonParams) {
   const base = {
     ...Layout.center,
     ...Gutters.largeHPadding,
-    height: 50,
-    backgroundColor: Colors.primary,
+    height: 400,
+    width: 250,
+    backgroundColor: Colors.white,
+    borderColor: Colors.primary,
+    borderWidth: 2,
   }
   const rounded = {
     ...base,
-    borderRadius: 20,
+    borderRadius: 15,
   }
 
   return StyleSheet.create({

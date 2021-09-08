@@ -31,6 +31,7 @@ export type ThemeGutters = { [key: string]: StyleType }
 export type ThemeCommon = {
   [key: string]: StyleType
   button: { [key: string]: StyleType }
+  card: { [key: string]: StyleType }
 }
 export type ThemeImages = { [key: string]: any }
 
