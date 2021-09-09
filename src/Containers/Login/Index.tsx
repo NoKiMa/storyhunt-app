@@ -51,7 +51,7 @@ const Login = () => {
             { color: Colors.white },
           ]}
         >
-          {t('example.labels.login')}
+          {t('login.labels.login')}
         </Text>
         <TextInput
           onChangeText={setLogin}
@@ -84,7 +84,7 @@ const Login = () => {
             { color: Colors.white },
           ]}
         >
-          {t('example.labels.password')}
+          {t('login.labels.password')}
         </Text>
         <TextInput
           onChangeText={setPassword}
@@ -104,7 +104,9 @@ const Login = () => {
         style={[Common.button.rounded, Gutters.regularBMargin]}
         onPress={saveAuthData}
       >
-        <Text style={[Fonts.textRegular, { color: Colors.white }]}>Login</Text>
+        <Text style={[Fonts.textRegular, { color: Colors.white }]}>
+          {t('login.buttons.enter')}
+        </Text>
       </TouchableOpacity>
     </View>
   )

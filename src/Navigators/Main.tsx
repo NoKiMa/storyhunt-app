@@ -1,8 +1,8 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 // import { IndexExampleContainer } from '@/Containers'
-// import Login from '@/Containers/Login/Index'
-import Cards from '@/Containers/Cards'
+import Login from '@/Containers/Login/Index'
+// import Cards from '@/Containers/Cards'
 import { useTheme } from '@/Theme'
 
 const Stack = createStackNavigator()
@@ -20,20 +20,20 @@ const MainNavigator = () => {
       }}
     >
       {/* <Stack.Screen name="Login" component={IndexExampleContainer} /> */}
-      {/* <Stack.Screen
+      <Stack.Screen
         name="Login"
         component={Login}
         options={{
           title: '',
         }}
-      /> */}
-      <Stack.Screen
+      />
+      {/* <Stack.Screen
         name="Cards"
         component={Cards}
         options={{
           title: '',
         }}
-      />
+      /> */}
     </Stack.Navigator>
   )
 }

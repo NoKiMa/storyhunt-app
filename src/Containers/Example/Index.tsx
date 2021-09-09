@@ -20,7 +20,7 @@ const IndexExampleContainer = () => {
   const { Common, Fonts, Gutters, Layout } = useTheme()
   const dispatch = useDispatch()
 
-  const user = useSelector((state: { user: UserState }) => state.user.item)
+  // const user = useSelector((state: { user: UserState }) => state.user.item)
   const fetchOneUserLoading = useSelector(
     (state: { user: UserState }) => state.user.fetchOne.loading,
   )
@@ -50,7 +50,7 @@ const IndexExampleContainer = () => {
           <Text style={Fonts.textRegular}>{fetchOneUserError.message}</Text>
         ) : (
           <Text style={Fonts.textRegular}>
-            {t('example.helloUser', { name: user.name })}
+            {/* {t('example.helloUser', { name: user.name })} */}
           </Text>
         )}
       </View>

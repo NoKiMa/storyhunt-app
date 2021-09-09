@@ -9,7 +9,7 @@ export default function ({ Colors, Gutters, Layout }: ThemeCommonParams) {
     width: 250,
     backgroundColor: Colors.white,
     borderColor: Colors.primary,
-    borderWidth: 2,
+    borderWidth: 3,
   }
   const rounded = {
     ...base,

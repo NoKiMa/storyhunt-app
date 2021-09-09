@@ -3,7 +3,7 @@ export default {
   actions: {
     continue: 'Continue',
   },
-  example: {
+  login: {
     helloUser: 'I am a fake user, my name is {{name}}',
     labels: {
       login: 'Login',
